@@ -1,0 +1,11 @@
+<tr>
+  <td><%= @stt += 1 %></td>
+  <td><%= review.title %></td>
+  <td class="img-review"><%= image_tag review.image.url %></td>
+  <td><%= review.description %></td>
+  <td>
+    <%= link_to t(".view"), admin_review_path(review.id) %>
+    <%= link_to t(".delete"), admin_review_path(review.id), method: :delete, data: { confirm: t("are_you_sure") } %>
+    <%= link_to t(".edit"), edit_admin_review_path(review.id) %>
+  </td>
+</tr>

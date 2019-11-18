@@ -1,0 +1,17 @@
+<%= form_for @user, url: yield(:url), html: {class: "register-form"} do |f| %>
+    <%= render "shared/error_messages", object: f.object  %>
+
+    <%= f.text_field :user_name, placeholder: t("username") %>
+
+    <%= f.email_field :email, placeholder: t("email") %>
+
+    <%= f.text_field :full_name, placeholder: t("yourname") %>
+
+    <%= f.password_field :password, placeholder: t("password") %>
+
+    <%= f.password_field :password_confirmation, placeholder: t("confirm_password") %>
+
+    <%= f.submit yield(:button), class: "submit" %>
+    <%= yield :message %>
+
+<% end %>

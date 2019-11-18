@@ -1,0 +1,29 @@
+<%= provide :title, @review.title %>
+
+<div class="container show-review">
+  <h1 class="rv-title"> <%= @review.title %> </h1>
+  <h4> <%= @review.user.full_name %> </h4>
+  <br />
+  <p class="rv-content"> <%= @review.content %> </p>
+  <div class="panel panel-default panel-custom">
+    <div class="panel-body" id="box-like">
+      <% if @liked %>
+        <%= render "unlike" %>
+      <% else %>
+        <%= render "like" %>
+      <% end %>
+    </div>
+  </div>
+
+  <div class="box-comment">
+    <div id="box-message">
+      <%= render "shared/flash_messages" %>
+    </div>
+    <div id ="box-comment">
+      <%= render "comments/form_comment", parent_id: Settings.parent_id_default %>
+    </div>
+    <div id="content-comment">
+      <%= render partial: "comments/comment", collection: @comments_parent %>
+    </div>
+  </div>
+</div>

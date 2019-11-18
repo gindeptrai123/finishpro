@@ -1,0 +1,13 @@
+<% provide :title, t("login.title") %>
+
+  <%= form_for :session, url: signin_path, html: {class: "login-form"} do |f| %>
+
+    <%= f.text_field :user_name, placeholder: t("username") %>
+
+    <%= f.password_field :password, placeholder: t("password") %>
+
+    <%= f.submit t("login.submit"), class: "submit" %>
+    <p class="message"> <%= t "login.not_registered" %>
+      <%= link_to t("login.create_an_account"), signup_path %>
+    </p>
+  <% end %>

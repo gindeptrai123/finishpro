@@ -1,0 +1,10 @@
+<% if object.errors.any? %>
+  <div id="error_exp">
+    <b> <%= t "msg.the_form_has" %> <%= pluralize object.errors.size, t("msg.error") %>. </b>
+    <ul>
+      <% object.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>

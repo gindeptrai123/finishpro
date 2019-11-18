@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield :title %></title>
+    <%= csrf_meta_tags %>
+    <%= stylesheet_link_tag "signin_signup", media: "all", "data-turbolinks-track": "reload" %>
+    <%= javascript_include_tag "application", "data-turbolinks-track": "reload" %>
+  </head>
+
+  <body>
+    <div class="login-page">
+      <div class="form">
+        <%= link_to image_tag("logo.png", alt: t("rails_logo"), class: "img-logo"), root_path %>
+        <%= yield %>
+      </div>
+    </div>
+  </body>
+</html>

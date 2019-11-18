@@ -1,0 +1,2 @@
+$('#box-comment').html('<%= escape_javascript(render("comments/form_comment", parent_id: Settings.parent_id_default)) %>');
+$('#content-comment').html('<%= escape_javascript(render partial: "comments/comment", collection: @comments_parent) %>');

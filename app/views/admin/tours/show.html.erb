@@ -1,0 +1,9 @@
+<% provide :title, @tour.title %>
+<div class="tour container">
+  <div class="show-tour show-img" >
+    <h1><%= yield(:title) %></h1>
+    <%= image_tag @tour.image.url %>
+    <des><%= @tour.description %></des><hr/>
+    <content><%= @tour.content %></content>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<% provide :title, t("profile.title") %>
+
+  <% if current_user? @user %>
+    <%= link_to edit_user_path(current_user) do %>
+      <button class="btn btn-primary btn-edit">
+      <i class="fa fa-pencil"></i> Chỉnh sửa </button>
+    <% end %>
+  <% end %>
+  <h3> <%= t "profile.title" %></h3>
+  <%= link_to image_tag("default-avatar.png", class: "avatar-img") %>
+  <ul>
+    <li> <b> <%= t "profile.name" %> : </b> <%= @user.full_name %> </li>
+    <li> <b> <%= t "profile.email" %> : </b> <%= @user.email %> </li>
+    <li> <b> <%= t "profile.gender" %> : </b> <%= @user.gender ? t("gender.male") : t("gender.female") %> </li>
+    <li> <b> <%= t "profile.reviews" %> : </b> 10 </li>
+  </ul>

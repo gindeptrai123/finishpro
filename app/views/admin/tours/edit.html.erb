@@ -1,0 +1,9 @@
+<% provide(:button_text, t("tours.edit.save")) %>
+<% provide(:title, t("tours.edit.title")) %>
+<% provide(:url, admin_tour_path) %>
+<div class="row">
+  <h4><b> <%= yield :title %><hr/></b></h4>
+  <div class="col-md-6 col-md-offset-3">
+    <%= render "form" %>
+  </div>
+</div>

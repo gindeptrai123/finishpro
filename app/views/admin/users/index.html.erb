@@ -1,0 +1,35 @@
+<% provide :title, t(".title") %>
+<div id="page-content-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h1><%= t ".title" %></h1>
+        <%= link_to new_admin_user_path do %>
+          <button type="button" class="btn btn-primary fl-r">
+            <%= t ".add_new_user" %>
+          </button>
+        <% end %>
+        <br/> <br/>
+        <table class="table table-bordered table-hover mt-10">
+          <thead>
+            <tr>
+              <th class="w-5" ><%= t ".id" %></th>
+              <th class="w-20"><%= t ".full_name" %> </th>
+              <th class="w-15"><%= t ".user_name" %></th>
+              <th class="w-20"><%= t ".email" %></th>
+              <th class="w-25"><%= t ".role" %></th>
+              <th class="w-15"><%= t ".action" %></th>
+            </tr>
+          </thead>
+          <tbody>
+            <%= render partial: "user", collection: @users %>
+          </tbody>
+        </table>
+        <div class="paginate">
+          <%= will_paginate @users %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+

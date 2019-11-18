@@ -1,0 +1,9 @@
+<%= link_to review_path review.id do %>
+  <div class="col-xs-6 col-sm-6 col-md-3 col-mobile review-img">
+    <%= image_tag review.image.url %>
+    <div class="text-detail">
+    <h5><b><%= review.title %> </b> </h5>
+    <%= review.description %> </p>
+    </div>
+  </div>
+<% end %>

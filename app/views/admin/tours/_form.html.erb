@@ -1,0 +1,31 @@
+<%= form_for @tour, url: yield(:url) do |f| %>
+  <%= render "shared/error_messages", object: f.object  %>
+
+  <%= f.label :title %>
+  <%= f.text_field :title, class: "form-control" %>
+
+  <%= f.label :description %>
+  <%= f.text_field :description, class: "form-control" %>
+
+  <%= f.label :content %>
+  <%= f.text_area :content, class: "form-control" %>
+
+  <%= f.label :price %>
+  <%= f.number_field :price, class: "form-control" %>
+
+  <%= f.label :date_in %>
+  <%= f.datetime_field :date_in, class: "form-control" %>
+
+  <%= f.label :date_out %>
+  <%= f.datetime_field :date_out, class: "form-control" %>
+
+  <%= f.label :image %>
+  <%= f.file_field :image %>
+  <div class="show-img">
+    <% if f.object.image? %>
+      <%= image_tag f.object.image %>
+    <% end %>
+  </div>
+
+  <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+<% end %>

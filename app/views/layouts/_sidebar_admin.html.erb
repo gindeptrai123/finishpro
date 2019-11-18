@@ -1,0 +1,33 @@
+<div id="wrapper">
+  <div class="overplay"></div>
+  <nav class="navbar navbar-inverse navbar-fixed-top" id="sidebar-wrapper" role="navigation">
+    <ul class="nav sidebar-nav">
+      <li class="sidebar-brand"><%= link_to current_user.full_name, admin_root_path %></li>
+      <li><%= link_to t(".home"), root_path %></li>
+      <li><%= link_to t(".tour"), admin_tours_path %></li>
+      <li><%= link_to t(".review"), admin_reviews_path %></li>
+      <li><%= link_to t(".user"), admin_users_path %></li>
+      <li><%= link_to t(".category"), admin_categories_path %></li>
+      <li class="dropdown">
+        <%= link_to "#", class: "dropdown-toggle", "data-toggle" => "dropdown" do %>
+          <%= t ".table" %> <span class = "caret"></span>
+        <% end %>
+        <ul class="dropdown-menu" role="menu">
+          <li class="dropdown-header"></li>
+          <li><%= link_to "1", "#" %></li>
+          <li><%= link_to "2", "#" %></li>
+          <li><%= link_to "3", "#" %></li>
+          <li><%= link_to "4", "#" %></li>
+          <li><%= link_to "5", "#" %></li>
+        </ul>
+      </li>
+      <li><%= link_to t(".help"), "#" %></li>
+      <li><%= link_to t(".contact"), "#" %></li>
+    </ul>
+  </nav>
+  <button type="button" class="hamburger is-closed" data-toggle="offcanvas">
+    <span class="hamb-top"></span>
+    <span class="hamb-middle"></span>
+    <span class="hamb-bottom"></span>
+  </button>
+</div>

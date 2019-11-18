@@ -1,0 +1,219 @@
+vi:
+  address: 103 Xuân Diệu, phường Thuận Phước, quận Hải Châu, TP Đà Nẵng
+  previous: Trước
+  next: Sau
+  nav:
+    tours: CHUYẾN ĐI
+    manage: QUẢN LÝ
+    homepage: TRANG CHỦ
+    reviews: CẢM NHẬN
+    news: TIN TỨC
+    food: ẨM THỰC
+    place: ĐỊA ĐIỂM
+    account: TÀI KHOẢN
+    profile: HỒ SƠ
+    setting: CÀI ĐẶT
+    logout: ĐĂNG XUẤT
+    post_review: VIẾT CẢM NHẬN
+    login: ĐĂNG NHẬP
+    signup: ĐĂNG KÝ
+    logout: ĐĂNG XUẤT
+  footer:
+    p1: "Địa chỉ: "
+    p2: "Email: "
+    p3: "Số điện thoại: "
+    p4: Bản quyền thuộc về Loloviet@ 2015. Tất cả các quyền được bảo hộ.
+    p5: Phát triển bởi Sun*
+  home:
+    title: Đặt vé du lịch
+    contact: LIÊN HỆ CHÚNG TÔI THEO HOTLINE
+  login:
+    title: Đăng nhập
+    submit: ĐĂNG NHẬP
+    create_an_account: Tạo tài khoản mới
+    not_registered: Chưa đăng ký?
+  signup:
+    title: Đăng ký
+    submit: ĐĂNG KÝ
+    signin: Đăng nhập
+    already_registered: Đã có tài khoản?
+  edit:
+    title: Chỉnh sửa trang cá nhân
+    submit: CẬP NHẬT
+  profile:
+    title: Hồ sơ cá nhân
+    name: Tên người dùng
+    email: Email
+    gender: Giới tính
+    reviews: Số đánh giá
+  signin: Đăng nhập
+  username: Tên tài khoản
+  password: Mật khẩu
+  email: Địa chỉ email
+  yourname: Tên của bạn
+  confirm_password: Xác nhận mật khẩu
+  base_title: Du lịch
+  msg:
+    username_pass_invalid: Tài khoản hoặc mật khẩu không đúng
+    the_form_has: Form này có
+    error: lỗi
+    update_success: Cập nhật thành công
+    update_fail: Cập nhật thất bại
+    user_invalid: Người dùng không tồn tại
+    create_review_success: Tạo review thành công
+    create_review_fail: Tạo review thất bại
+    category_invalid: Category không tồn tại!
+    comment_fail: Bình luận không thành công!
+    comment_delete_success: Xóa bình luận thành công
+    comment_delete_fail: Gặp lỗi khi xóa bình luận
+    approved: Chuyến đi được khởi tạo
+    update: Đã cập nhật
+    del: Đã xóa
+    update_err: Cập nhật không thành công
+    tour_inv: Chuyến đi không khả dụng
+    not_admin: Bạn không phải là quản lý
+    action_fail: Bạn không thể thực hiện hành động
+    create_cate_success: Tạo danh mục thành công
+    create_cate_fail: Tạo danh mục thất bại
+    delete_cate_success: Xóa danh mục thành công
+    delete_cate_fail: Xóa danh mục thất bại
+    delete_review_success: Xóa cảm nhận thành công
+    delete_review_fail: Xóa cảm nhận thất bại
+    user_delete_success: Xóa người dùng thành công
+    user_delete_fail: Xóa người dùng thất bại
+    review_invalid: Bài cảm nhận không tồn tại
+    no_reviews: Chưa có cảm nhận nào
+    no_categories: Chưa có danh mục nào
+    create_user_success: Tạo tài khoản thành công
+    create_user_fail: Tạo tài khoản không thành công
+  admin:
+    pages:
+      home:
+        header: Tên quản lý
+        title: Trang chính
+        content: Đây là trang của quản lý
+    categories:
+      index:
+        title: Tất cả danh mục
+        id: Id
+        name: Tên
+        action: Hành động
+      category:
+        edit: Sửa
+        delete: Xóa
+      form:
+        update: Cập nhật
+        add_cate: Thêm mới danh mục
+        name: Tên danh mục
+    reviews:
+      index:
+        title: Tất cả cảm nhận
+        id: Id
+        title_table: Tiêu đề
+        content: Nội dung
+        descreption: Mô tả
+        image: Hình ảnh
+        action: Hành động
+        add_new_review: Thêm cảm nhận mới
+      review:
+        delete: Xóa
+        view: Xem
+        edit: Sửa
+      show:
+        title: Chi tiết danh mục
+        all_review: Tất cả cảm nhận
+        edit: Sửa
+      new:
+        title: Tạo review mới
+    users:
+      index:
+        title: Tất cả người dùng
+        add_new_user: Thêm người dùng mới
+        id: Id
+        full_name: Tên đầy đủ
+        user_name: Tên tài khoản
+        email: Email
+        role: Vai trò
+        action: Hành động
+      show:
+        title: Chi tiết người dùng
+      new:
+        title: Thêm mới người dùng
+        add_new_user: Thêm người dùng mới
+      user:
+        view: Xem
+        update_role: Chỉnh sửa vai trò
+        update: Cập nhật
+        delete: Xóa
+  layouts:
+    sidebar_admin:
+      name: Khách hàng
+      home: Trang chủ
+      tour: Chuyến đi
+      profile: Cá nhân
+      user: Quản lý người dùng
+      table: Thống kê
+      help: Trợ giúp
+      contact: Liên hệ
+      review: Cảm nhận
+      user: Người dùng
+      category: Danh mục
+  shared:
+    search_form:
+      submit: Gửi
+  gender:
+    male: Nam
+    female: Nữ
+  form:
+    title: Tiêu đề
+    content: Nội dung
+    description: Mô tả
+    submit: Thêm
+    update: Cập nhật
+  yourreview: Đánh giá của bạn
+  comment:
+    comment: Bình luận
+    reply: Trả lời
+    yourthink: Bạn đang nghĩ gì?
+  delete_comment: Xóa bình luận
+  are_you_sure: Bạn chắc không?
+  tours:
+    edit:
+      save: Lưu thay đổi
+      change: Thay đổi
+      title: Điểu chỉnh
+    index:
+      create: Tạo chuyến du lịch mới
+      title: Tất cả chuyến du lịch
+    new:
+      create: Tạo
+      title: Chuyến du lịch mới
+    show:
+      read: Xem
+      edit: Chỉnh sửa
+      del: Xóa
+      confirm: Bạn chắc chắn
+      rate: Đánh giá
+    search:
+      title: Tìm kiếm
+  table:
+    id: ID
+    title: Địa điểm du lịch
+    description: Tổng quan
+    image: Hình ảnh
+    action: Hành động
+  err_add:
+    date: phải lớn hơn ngày về
+  activerecord:
+    attributes:
+      tour:
+        title: Địa điểm du lịch
+        description: Tổng quan
+        content: Nội dung chi tiết
+        price: Giá
+        date_in: Ngày đi
+        date_out: Ngày về
+        rating: Đánh giá
+        image: Hình ảnh
+  like_review: Thích bài
+  unlike_review: Bỏ thích bài

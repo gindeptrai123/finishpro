@@ -1,0 +1,10 @@
+<% provide :title, t("signup.title") %>
+<% provide :url, signup_path  %>
+<% provide :button, t("signup.submit") %>
+<% provide :message do %>
+  <p class="message"><%= t "signup.already_registered" %>
+  <%= link_to t("signup.signin"), signin_path %>
+  </p>
+<% end %>
+
+<%= render "form" %>

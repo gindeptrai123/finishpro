@@ -1,0 +1,6 @@
+<div class="box-like">
+  <%= @review.likes.size %> <i class="fa fa-thumbs-up"></i> <br />
+  <%= form_for @liked, url: like_path(@liked.id), method: :delete, remote: true  do |f| %>
+    <button class="btn btn-primary"><%= t "unlike_review" %></button>
+  <% end %>
+</div>

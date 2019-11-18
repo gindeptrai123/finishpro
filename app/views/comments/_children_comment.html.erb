@@ -1,0 +1,19 @@
+<div class="comment">
+  <div class="delete-comment">
+    <i>
+      <% if current_user? children_comment.user %>
+      <%= link_to t("delete_comment"), children_comment, method: :delete, remote: true, data: { confirm: t("are_you_sure") } %>
+      <% end %>
+    </i>
+  </div>
+  <div class="avatar">
+    <%= image_tag Settings.avatar %>
+  </div>
+
+  <div class="content-cm">
+    <h5> <b><%= children_comment.user.full_name %> </b> </h5>
+    <div class="main-content">
+      <p> <%= children_comment.content %></p>
+    </div>
+  </div>
+</div>

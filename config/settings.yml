@@ -1,0 +1,30 @@
+company: LOLOVIET
+email: loloviet@gmai.com
+phone: "0511.3538.266"
+width_item: "100%"
+en: "en"
+vi: "vi"
+username: 32
+email: 64
+password: 6
+review_page: 8
+description: 60
+description_row: 3
+content_row: 10
+review: "review"
+tour: "tour"
+parent_id_default: 0
+avatar: "default-avatar.png"
+zero: 0
+tours: 8
+length:
+  title: 3
+  content: 9000
+  description: 140
+role:
+  admin: 0
+  user: 1
+paginate:
+  categories: 10
+  users: 15
+  reviews: 10

@@ -1,0 +1,39 @@
+<% provide :title, t(".title") %>
+<div id="page-content-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+
+        <h1><%= t ".title" %></h1>
+        <%= link_to new_admin_review_path do %>
+          <button type="button" class="btn btn-primary fl-r">
+            <%= t ".add_new_review" %>
+          </button>
+        <% end %>
+        <br/> <br/>
+        <% if @reviews.any? %>
+          <table class="table table-bordered table-hover mt-10">
+            <thead>
+              <tr>
+                <th class="w-5"><%= t ".id" %></th>
+                <th class="w-20"><%= t ".title" %> </th>
+                <th class="w-20"><%= t ".image" %></th>
+                <th class="w-35"><%= t ".descreption" %></th>
+                <th class="w-20"><%= t ".action" %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @stt = Settings.paginate.reviews * (params[:page].to_i - 1) %>
+              <%= render partial: "review", collection: @reviews %>
+            </tbody>
+          </table>
+          <div class="paginate">
+            <%= will_paginate @reviews %>
+          </div>
+        <% else %>
+          <i><%= t "msg.no_reviews" %></i>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

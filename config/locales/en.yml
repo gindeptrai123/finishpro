@@ -1,0 +1,207 @@
+en:
+  address: 103 Xuan Dieu, Thuan Phuoc town, Hai Chau District, Da Nang city
+  previous: Previous
+  next: Next
+  nav:
+    tours: TOURS
+    manage: MANAGE
+    homepage: HOME
+    reviews: REVIEWS
+    news: NEWS
+    food: FOOD
+    place: PLACE
+    account: ACCOUNT
+    profile: PROFILE
+    setting: SETTING
+    logout: LOGOUT
+    post_review: YOUR REVIEW
+    login: LOGIN
+    signup: SIGNUP
+    logout: LOGOUT
+  footer:
+    p1: "Address: "
+    p2: "Email: "
+    p3: "Phone: "
+    p4: "@Copyright Loloviet@ 2015. All role are protected."
+    p5: Develope by Sun*
+  home:
+    title: Booking tours
+    contact: CONTACT US BY HOTLINE
+  login:
+    title: Login
+    submit: LOGIN
+    create_an_account: Create An Account
+    not_registered: Not registered?
+  signup:
+    title: Signup
+    submit: SINGUP
+    signin: Sign in
+    already_registered: Already registered?
+  edit:
+    title: Edit profile
+    submit: UPDATE
+  profile:
+    title: Your Profile
+    name: Full name
+    email: Email
+    gender: Gender
+    reviews: Reviews
+  signin: Signin
+  username: Username
+  password: Password
+  email: Email
+  yourname: Your name
+  confirm_password: Confirm password
+  base_title: Travel
+  msg:
+    username_pass_invalid: Username or password invalid
+    the_form_has: The form has
+    error: error
+    upate_success: Update Success
+    update_fail: Update Fail
+    user_invalid: User invalid
+    create_review_success: Review has created success!
+    create_review_fail: Review has create failed !
+    category_invalid: Category invalid!
+    comment_fail: Comment has fail!
+    comment_delete_success: Comment has deleted!
+    comment_delete_fail: Comment has deleted failed!
+    approved: New tour approved
+    update: Tour updated
+    del: Tour deleted
+    update_err: Update failed
+    tour_inv: Invalid tour
+    not_admin: You are not admin user
+    action_fail: Your action has fail
+    create_cate_success: Create category success!
+    create_cate_fail: Create category fail!
+    delete_cate_success: Delete category success!
+    delete_cate_fail: Delete category fail!
+    delete_review_success: Delete review success!
+    delete_review_fail: Delete review fail !
+    user_delete_success: User delete success !
+    user_delete_fail: User delete failed !
+    review_invalid: Review invalid!
+    no_reviews: Don't have reviews yet!
+    no_categories: Don't have categories yet!
+    create_user_success: Create User Success
+    create_user_fail: Create User Fail
+  admin:
+    pages:
+      home:
+        header: Admin name
+        title: Home page
+        content: This is admin home page
+    categories:
+      index:
+        title: All Categories
+        id: Id
+        name: Name
+        action: Action
+      category:
+        edit: Edit
+        delete: Delete
+      form:
+        update: Update
+        add_cate: Add New Category
+        name: name
+    reviews:
+      index:
+        title: All Reviews
+        id: Id
+        title_table: Title
+        content: Content
+        descreption: Descreption
+        image: Image
+        action: Action
+        add_new_review: Add New Review
+      review:
+        delete: Delete
+        view: View
+        edit: Edit
+      show:
+        title: Manage Review
+        all_review: All Review
+        edit: Edit
+      news:
+        title: New Review
+    users:
+      index:
+        title: All users
+        add_new_user: Add new user
+      show:
+        title: User detail
+      new:
+        title: Add new user
+        add_new_user: Add new user
+      user:
+        view: View
+        update_role: Update role
+        update: Update
+        delete: Delete
+  layouts:
+    sidebar_admin:
+      name: Guest
+      home: Home
+      tour: Tours
+      profile: Profile
+      user: Manage Users
+      table: Table
+      help: Help
+      contact: Contact
+  gender:
+    male: Male
+    female: Female
+  form:
+    title: Title
+    content: Content
+    description: Description
+    submit: Submit
+    update: Update
+  yourreview: Your Review
+  comment:
+    comment: Comment
+    reply: Reply
+    yourthink: What are you thinking?
+  delete_comment: Delete comment
+  are_you_sure: Are you sure?
+  tours:
+    edit:
+      save: Save changes
+      change: Change
+      title: Edit tours
+    index:
+      create: Create new tours
+      title: All tours
+    new:
+      create: Create
+      title: New tours
+    show:
+      read: Read
+      edit: Edit
+      del: Delete
+      confirm: Are you sure?
+      rate: Rating
+    search:
+      title: Search
+  table:
+    id: ID
+    title: Title
+    description: Description
+    image: Image
+    action: Action
+  err_add:
+    date: must be before the date out
+  activerecord:
+    attributes:
+      tour:
+        title: Title
+        description: Description
+        content: Content
+        price: Price
+        date_in: Date in
+        date_out: Date out
+        rating: Rating
+        image: Image
+  like_review: Like Review
+  unlike_review: Unlike Review

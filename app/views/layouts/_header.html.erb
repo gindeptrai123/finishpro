@@ -1,0 +1,68 @@
+<div class="header1 ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-lg-2 dpl-rps-b">
+        <i class="fa fa-phone "  aria-hidden="true"></i> 0511 3538 266
+      </div>
+      <div class="col-md-7 col-lg-7 dpl-rps-b ">
+        <i class="fa fa-map-marker ml-45" aria-hidden="true"></i>
+        <%= t "address" %>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div id="support" class="mt-rps-10" >
+          <%= link_to image_tag("coen.jpg"), locale: Settings.en  %>
+          <%= link_to image_tag("covi.png"), locale: Settings.vi %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="banner">
+  <div id="menu">
+    <nav class="navbar navbar-default bg-tp">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+
+          </button>
+          <%= link_to image_tag("logo.png", alt: t("rails_logo")), root_path,
+            class: "navbar-brand" %>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><%= link_to t("nav.homepage"), root_path %></li>
+            <li><%= link_to t("nav.tours"), tours_path %></li>
+            <%= render partial: "layouts/category", collection: @categories %>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+              <% if logged_in? %>
+                <li class="dropdown">
+                  <%= link_to t("nav.account"), "#", class: "dropdown-toggle", "data-toggle" => "dropdown" %>
+                  <ul class="dropdown-menu custom-drd">
+                    <li><%= link_to t("nav.profile"), current_user %></li>
+                    <li><%= link_to t("nav.setting"), edit_user_path(current_user) %></li>
+                    <% if check_is_admin? %>
+                      <li><%= link_to t("nav.manage"), admin_root_path %></li>
+                    <% end %>
+                    <li><%= link_to t("nav.post_review"), new_review_path %></li>
+                    <li class="divider"></li>
+                    <li>
+                      <%= link_to t("nav.logout"), logout_path, method: :delete %>
+                    </li>
+                  </ul>
+                </li>
+              <% else %>
+                <%= link_to t("nav.login"), signin_path %> /
+                <%= link_to t("nav.signup"), signup_path %>
+              <% end %>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>

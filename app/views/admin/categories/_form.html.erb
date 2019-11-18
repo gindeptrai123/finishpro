@@ -1,0 +1,12 @@
+<%= form_for @category, url: url, html: {class: "form-inline"} do |f| %>
+  <%= f.text_field :name, class: "form-control", placeholder: t(".name") %>
+  <% if @category.persisted? %>
+    <button class="btn btn-warning">
+      <%= t ".update" %>
+    </button>
+  <% else %>
+    <button class="btn btn-primary">
+      <%= t ".add_cate" %>
+    </button>
+  <% end %>
+<% end %>

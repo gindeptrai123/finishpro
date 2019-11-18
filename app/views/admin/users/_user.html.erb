@@ -1,0 +1,16 @@
+<tr>
+  <td><%= @stt += 1 %></td>
+  <td><%= user.full_name %></td>
+  <td><%= user.user_name %></td>
+  <td><%= user.email %></td>
+  <td>
+    <%= form_for user,url: admin_user_path(user.id), html: {class: "form-inline"} do |f| %>
+      <%= f.text_field :role, class: "form-control role-input" %>
+      <button class="btn btn-warning"><%= t ".update" %></button>
+    <% end %>
+  </td>
+  <td>
+    <%= link_to t(".delete"), admin_user_path(user.id), method: :delete, data: { confirm: t("are_you_sure") } %>
+
+  </td>
+</tr>

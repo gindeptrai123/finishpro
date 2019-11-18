@@ -1,0 +1,40 @@
+<% provide :title, t(".title") %>
+<div id="page-content-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h1><%= t ".title" %></h1>
+        <div class="error-admin">
+        </div>
+        <div class="category-admin">
+          <% if @category.persisted? %>
+            <%= render "form", url: admin_category_path(@category.id) %>
+          <% else %>
+            <%= render "form", url: admin_categories_path %>
+          <% end %>
+        </div>
+        <br/>
+        <br/>
+        <% if @categories.any? %>
+          <table class="table table-bordered table-hover mt-10">
+            <thead>
+              <tr>
+                <th class="w-5"> <%= t ".id" %></th>
+                <th class="w-45"> <%= t ".name" %> </th>
+                <th class="w-50"> <%= t ".action" %></th>
+              </tr>
+            </thead>
+            <tbody>
+              <%= render partial: "category", collection: @categories %>
+            </tbody>
+          </table>
+          <div class="paginate">
+            <%= will_paginate @categories %>
+          </div>
+        <% else %>
+          <i><%= t "msg.no_categories" %> </i>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

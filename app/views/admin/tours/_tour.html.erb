@@ -1,0 +1,11 @@
+<tr>
+  <td><%= tour.id %></td>
+  <td><%= tour.title %></td>
+  <td><%= tour.description %></td>
+  <td><%= image_tag tour.image.url %></td>
+  <td><%= link_to t("tours.show.read"), admin_tour_path(tour) %>&emsp;&emsp;
+  <%= link_to t("tours.show.edit"), edit_admin_tour_path(tour) %>&emsp;&emsp;
+  <%= link_to t("tours.show.del"), admin_tour_path(tour),
+    method: :delete, data: { confirm: t("tours.show.confirm") } %>
+  </td>
+</tr>

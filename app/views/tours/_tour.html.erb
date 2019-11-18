@@ -1,0 +1,9 @@
+<%= link_to tour_path tour.id do %>
+  <div class="col-xs-6 col-sm-6 col-md-3 col-mobile tour-img">
+    <%= image_tag tour.image.url %>
+    <div class="text-detail">
+      <h5><b><%= tour.title %> </b> </h5>
+      <%= tour.description %> </p>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,23 @@
+<% provide :title, t("tours.index.title") %>
+<div class="tour container tour-admin">
+  <h4><b> <%= yield :title %><hr/></b></h4>
+  <%= link_to new_admin_tour_path do %>
+    <button class="btn btn-primary btn-add-new">
+      <%= t("tours.index.create") %>
+    </button>
+  <% end %>
+  <table class="table table-bordered table-hover">
+    <thead>
+      <tr>
+        <th width="5%"><%= t("table.id") %></th>
+        <th width="15%"><%= t("table.title") %></th>
+        <th width="35%"><%= t("table.description") %></th>
+        <th width="25%"><%= t("table.image") %></th>
+        <th width="20%"><%= t("table.action") %></th>
+      </tr>
+    </thead>
+    <tbody>
+        <%= render partial: "tour", collection: @tours %>
+    </tbody>
+  </table>
+</div>

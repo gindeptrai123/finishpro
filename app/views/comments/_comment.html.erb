@@ -1,0 +1,25 @@
+<div class="comment">
+  <div class="delete-comment">
+    <i>
+      <% if current_user? comment.user %>
+      <%= link_to t("delete_comment"), comment, method: :delete, remote: true, data: { confirm: t("are_you_sure") } %>
+      <% end %>
+    </i>
+  </div>
+  <div class="avatar">
+    <%= image_tag Settings.avatar %>
+  </div>
+
+  <div class="content-cm">
+    <h5> <b><%= comment.user.full_name %></b> </h5>
+
+    <div class="main-content">
+      <p> <%= comment.content %></p>
+    </div>
+    <a class="showreply"><%= t "comment.reply" %></a>
+    <%= render partial: "comments/form_comment", locals: {parent_id: comment.id} %>
+    <%= render partial: "comments/children_comment" , collection: comments_child(comment.id) %>
+
+  </div>
+</div>
+
