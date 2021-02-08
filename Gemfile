@@ -7,7 +7,7 @@ end
 
 gem "bcrypt", "3.1.12"
 gem "bootstrap-sass", "3.3.7"
-gem "carrierwave", "~> 0.10.0"
+gem "carrierwave", "~> 1.3.2"
 gem "coffee-rails", "~> 4.2"
 gem "config"
 gem "faker", git: "https://github.com/faker-ruby/faker.git", branch: "master"
